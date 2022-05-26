@@ -1,0 +1,21 @@
+body {
+    background-color: #f0f0f0;
+    padding: 1em;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 1em 0;
+}
+
+canvas {
+    display: block;
+    background-color: white;
+    width: 80em;
+    height: 40em;
+    width: 80vw;
+    height: 40vw;
+    border-radius: 10px;
+    margin: 0 auto;
+}
