@@ -19,3 +19,8 @@ canvas {
     border-radius: 10px;
     margin: 0 auto;
 }
+
+.button-container {
+    margin-top: 1em;
+    text-align: center;
+}
