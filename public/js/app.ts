@@ -51,7 +51,7 @@
             return;
         }
 
-        ev.preventDefault();
+        ev.preventDefault(); // to prevent scrolling when writing and window is scrollable
 
         const coords = getOffset(ev);
 
@@ -88,6 +88,9 @@
 
             const touch = touches[0];
             const rect = (<HTMLElement>ev.currentTarget).getBoundingClientRect();
+            // x = touch.pageX - rect.x;
+            // y = touch.pageY - rect.y;
+            // should use clientX and clientY when scrolling is a possibility
             x = touch.clientX - rect.x;
             y = touch.clientY - rect.y;
         } else {
