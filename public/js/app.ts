@@ -51,6 +51,8 @@
             return;
         }
 
+        ev.preventDefault();
+
         const coords = getOffset(ev);
 
         if (!coords) {
@@ -86,8 +88,8 @@
 
             const touch = touches[0];
             const rect = (<HTMLElement>ev.currentTarget).getBoundingClientRect();
-            x = touch.pageX - rect.x;
-            y = touch.pageY - rect.y;
+            x = touch.clientX - rect.x;
+            y = touch.clientY - rect.y;
         } else {
             x = mEvent.offsetX;
             y = mEvent.offsetY;
